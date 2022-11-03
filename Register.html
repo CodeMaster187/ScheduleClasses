@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+            h1{
+                text-align:center;
+                font-family:sans-serif;
+            }
+            form{
+                padding:20px;
+            }
+        </style>
+        <script>
+            function Submit(){
+                alert("Thank You For Signing Up");
+            }
+            function Reset(){
+                alert("Your Form Has Been Reseted");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form >
+            <label>Course</label>
+            <select>
+            <option>Choose A Course</option>
+            <option>Soccer</option>
+            <option>Basketball</option>
+            <option>Swimming</option>
+            <option>Coding</option>
+            <option>Cooking</option>
+            </select>
+            <br><br>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            <br><br>
+            <label for="lname">Last Name: </label>
+            <input type="text" name="lname">
+            <br><br>
+            <label>Contact Number: </label>
+            <input type="number">
+            <br><br>
+            <label>Email ID:</label>
+            <input type="email">
+            <br><br>
+            <label>Date Of Birth: </label>
+            <input type="date">
+            <br><br>
+            <label>Time:</label>
+            <input type="time">
+            <br><br>
+            <button type="button" onclick="Submit()">Submit</button>
+            <button type="reset" onclick="Reset()">Reset</button>
+        </form>
+    </body>
+</html>
